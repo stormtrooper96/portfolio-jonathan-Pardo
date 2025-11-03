@@ -15,22 +15,23 @@
     <div class="collapse navbar-collapse" id="navbarNav" ref="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link class="nav-link" to="/portafolio" @click="closeMenu">Portafolio</router-link>
+          <router-link class="nav-link" to="/portafolio" @click="closeMenu">{{ $t('nav.portfolio') }}</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/proyectos" @click="closeMenu">Proyectos</router-link>
+          <router-link class="nav-link" to="/proyectos" @click="closeMenu">{{ $t('nav.projects') }}</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/biografia" @click="closeMenu">Biografia</router-link>
+          <router-link class="nav-link" to="/biografia" @click="closeMenu">{{ $t('nav.biography') }}</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/cv" @click="closeMenu">CV</router-link>
+          <router-link class="nav-link" to="/cv" @click="closeMenu">{{ $t('nav.cv') }}</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/contacto" @click="closeMenu">Contacto</router-link>
+          <router-link class="nav-link" to="/contacto" @click="closeMenu">{{ $t('nav.contact') }}</router-link>
         </li>
       </ul>
-      <div class="navbar-nav ml-auto">
+      <div class="navbar-nav ml-auto d-flex align-items-center">
+        <LanguageToggle />
         <DarkModeToggle />
       </div>
     </div>
@@ -41,6 +42,7 @@
 import { ref, onMounted, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
 import DarkModeToggle from './DarkModeToggle.vue'
+import LanguageToggle from './LanguageToggle.vue'
 
 const navbarCollapse = ref(null)
 const router = useRouter()

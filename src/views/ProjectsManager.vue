@@ -3,17 +3,17 @@
     <div class="container">
       <div class="row mb-4">
         <div class="col-12">
-          <h1 class="display-4">Proyectos</h1>
-          <p class="lead">Explora mis proyectos y repositorios en GitHub</p>
+          <h1 class="display-4">{{ $t('projects.title') }}</h1>
+          <p class="lead">{{ $t('projects.subtitle') }}</p>
         </div>
       </div>
 
       <!-- Lista de Proyectos (Solo Lectura) -->
       <div class="row">
         <div class="col-12">
-          <div v-if="projects.length === 0" class="alert alert-info">
-            No hay proyectos disponibles por el momento.
-          </div>
+            <div v-if="projects.length === 0" class="alert alert-info">
+              {{ $t('projects.noProjects') }}
+            </div>
           <div v-else>
             <div v-for="project in projects" :key="project.id" class="card mb-4">
               <div class="card-body">
@@ -22,7 +22,7 @@
                     <h4 class="card-title">{{ project.title }}</h4>
                     <p class="card-text lead">{{ project.description }}</p>
                     <p class="card-text">
-                      <small class="text-muted">Fecha: {{ project.date }}</small>
+                      <small class="text-muted">{{ $t('projects.date') }} {{ project.date }}</small>
                     </p>
                     <div class="markdown-preview mb-3" v-html="renderMarkdown(project.markdown)"></div>
                   </div>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="mb-3">
                       <a :href="project.githubUrl" target="_blank" class="btn btn-primary btn-block">
-                        <i class="fab fa-github"></i> Ver en GitHub
+                        <i class="fab fa-github"></i> {{ $t('projects.viewGitHub') }}
                       </a>
                     </div>
                   </div>

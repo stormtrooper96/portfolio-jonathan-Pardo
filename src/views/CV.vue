@@ -15,7 +15,7 @@
       <div class="row mb-4">
         <div class="col-12">
           <div class="cv-section">
-            <h2>Professional Summary</h2>
+            <h2>{{ $t('cv.professionalSummary.title') }}</h2>
             <hr>
             <p>{{ cvData.professionalSummary }}</p>
           </div>
@@ -26,7 +26,7 @@
       <div class="row mb-4">
         <div class="col-12">
           <div class="cv-section">
-            <h2>Professional Experience</h2>
+            <h2>{{ $t('cv.workExperience.title') }}</h2>
             <hr>
             <div v-for="exp in cvData.experience" :key="exp.id" class="experience-item mb-4">
               <div class="experience-header">
@@ -34,12 +34,12 @@
                 <div class="experience-meta">
                   <span class="sector-badge">{{ exp.sector }}</span>
                   <span class="duration-badge">{{ exp.duration }}</span>
-                  <span class="period-text">{{ exp.period }}</span>
+                  <span class="period-text">{{ getPeriodTranslation(exp.period) }}</span>
                 </div>
               </div>
               <p class="experience-description">{{ exp.description }}</p>
               <div v-if="exp.responsibilities && exp.responsibilities.length > 0" class="responsibilities mt-3">
-                <h4 class="responsibilities-title">Key Responsibilities:</h4>
+                <h4 class="responsibilities-title">{{ $t('cv.keyResponsibilities') }}</h4>
                 <ul class="responsibilities-list">
                   <li v-for="(responsibility, idx) in exp.responsibilities" :key="idx">
                     {{ responsibility }}
@@ -64,7 +64,7 @@
       <div class="row mb-4">
         <div class="col-12">
           <div class="cv-section">
-            <h2>Technical Skills</h2>
+            <h2>{{ $t('cv.technicalSkills.title') }}</h2>
             <hr>
             
             <!-- QA Skills -->
@@ -159,7 +159,7 @@
       <div class="row mb-4">
         <div class="col-12">
           <div class="cv-section">
-            <h2>EDUCATION</h2>
+            <h2>{{ $t('cv.education.title') }}</h2>
             <hr>
             <div v-for="edu in cvData.education" :key="edu.degree" class="education-item mb-4">
               <div class="education-date">
@@ -178,7 +178,7 @@
       <div class="row mb-4">
         <div class="col-12">
           <div class="cv-section">
-            <h2>LANGUAGES</h2>
+            <h2>{{ $t('cv.languages.title') }}</h2>
             <hr>
             <ul class="languages-list">
               <li v-for="lang in cvData.languages" :key="lang.language" class="language-item mb-2">
@@ -193,7 +193,7 @@
       <div class="row mb-4">
         <div class="col-12">
           <div class="cv-section">
-            <h2>Certifications & Courses</h2>
+            <h2>{{ $t('cv.certifications.title') }}</h2>
             <hr>
             <ul class="list-unstyled">
               <li v-for="cert in cvData.certifications" :key="cert.name" class="mb-3 certification-item">
@@ -201,7 +201,7 @@
                   <i v-if="cert.importance === 'high'" class="fas fa-star text-warning mr-2"></i>
                   <div>
                     <strong>{{ cert.name }}</strong> - {{ cert.institution }}
-                    <span v-if="cert.importance === 'high'" class="badge badge-warning ml-2">Key Certification</span>
+                    <span v-if="cert.importance === 'high'" class="badge badge-warning ml-2">{{ $t('cv.keyCertification') }}</span>
                   </div>
                 </div>
               </li>
@@ -214,10 +214,52 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import cvDataJson from '../data/cv.json'
+import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import cvDataEn from '../data/cv-en.json'
+import cvDataEs from '../data/cv-es.json'
+import cvDataCommon from '../data/cv.json'
 
-const cvData = ref(cvDataJson)
+const { locale, t } = useI18n()
+
+// Datos comunes que no cambian (educación, idiomas, certificaciones, imágenes)
+const commonData = ref(cvDataCommon)
+
+// Datos traducibles según el idioma
+const translatedData = computed(() => {
+  return locale.value === 'es' ? cvDataEs : cvDataEn
+})
+
+// Función para traducir el periodo
+const getPeriodTranslation = (period) => {
+  if (period === 'Current Position' || period === 'Posición Actual') {
+    return t('cv.currentPosition')
+  } else if (period === 'Previous Position' || period === 'Posición Anterior') {
+    return t('cv.previousPosition')
+  }
+  return period
+}
+
+// Datos combinados del CV
+const cvData = computed(() => {
+  return {
+    personalInfo: {
+      ...translatedData.value.personalInfo,
+      email: translatedData.value.personalInfo.email === "Available upon request" 
+        ? (locale.value === 'es' ? 'Disponible bajo solicitud' : 'Available upon request')
+        : translatedData.value.personalInfo.email
+    },
+    professionalSummary: translatedData.value.professionalSummary,
+    experience: translatedData.value.experience.map(exp => ({
+      ...exp,
+      image: commonData.value.experience.find(e => e.id === exp.id)?.image || exp.image
+    })),
+    skillsByCategory: translatedData.value.skillsByCategory,
+    education: commonData.value.education,
+    languages: commonData.value.languages,
+    certifications: commonData.value.certifications
+  }
+})
 </script>
 
 <style scoped>

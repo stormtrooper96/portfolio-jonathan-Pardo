@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "portfolio": "Portafolio",
+    "projects": "Proyectos",
+    "biography": "Biografia",
+    "cv": "CV",
+    "contact": "Contacto"
+  },
+  "home": {
+    "greeting": "Hola,",
+    "intro": "ingeniero de sistemas con más de 5 años de experiencia en QA Automation, QA Manual, DevOps y desarrollo Fullstack. Especializado en automatización de pruebas, desarrollo de frameworks de testing, integración CI/CD, manejo avanzado de bases de datos y desarrollo web con JavaScript, Python, Ruby on Rails y Java.",
+    "checkMore": "Revisa Más",
+    "skillsTitle": "Cuento con conocimiento en...",
+    "skills": {
+      "qa": {
+        "title": "QA Automation & Testing",
+        "description": "Amplia experiencia en automatización de pruebas con Selenium WebDriver, desarrollo de frameworks de automatización, integración con CI/CD, pruebas de API, y ejecución de suites de regresión automatizadas. Más de 3 años en automatización de pruebas."
+      },
+      "javascript": {
+        "title": "JavaScript & Frameworks Modernos",
+        "description": "Experto en JavaScript (ES6+), TypeScript, Vue.js, React, Angular y Node.js. Desarrollo Fullstack de aplicaciones web modernas y APIs REST. Experiencia sólida en desarrollo frontend y backend."
+      },
+      "python": {
+        "title": "Python & ETL",
+        "description": "Conocimiento avanzado en Python para automatización de pruebas, ETL, análisis de datos y procesamiento de información. Experiencia con librerías como Airflow para automatización de tareas y pipelines de datos."
+      },
+      "databases": {
+        "title": "Bases de Datos Relacionales",
+        "description": "Más de 2 años de experiencia en manejo avanzado de bases de datos. Desarrollo de consultas SQL complejas, modelamiento de datos, optimización y gestión de bases de datos relacionales (PostgreSQL, MySQL, SQL Server, Oracle, PL/SQL)."
+      },
+      "devops": {
+        "title": "DevOps & CI/CD",
+        "description": "Experiencia en configuración de pipelines CI/CD, Jenkins, GitLab CI, Docker, containerización, despliegues automatizados e infraestructura como código. Integración de pruebas automatizadas en pipelines de entrega continua."
+      },
+      "railsJava": {
+        "title": "Ruby on Rails & Java",
+        "description": "Desarrollo de APIs REST con Ruby on Rails, enrutamiento, manejo de mensajes HTTP y arquitectura MVC. Conocimiento en Java para aplicaciones empresariales y desarrollo de aplicaciones de escritorio."
+      }
+    }
+  },
+  "portfolio": {
+    "iam": "Soy...",
+    "fromBogota": "From Bogotá to World",
+    "intro": "En formación como Tecnologo en Desarrollo web Experiencia generando consultas en lenguaje SQL, realizando pruebas funcionales y no funcionales de software, análisis de información cuantitativa y conocimiento en desarrollo web Fullstack y de aplicaciones móviles híbridas. Con capacidad de análisis, proactividad, mejoramiento continuo, Actitud de servicio y orientación al logro.",
+    "experience": "Experiencia",
+    "skills": "Skills",
+    "skillsIntro": "Cuento conocimiento en las siguientes tecnologias y lenguajes de desarrollo:",
+    "certifications": "Certificaciones y cursos",
+    "techStack": "Stack Tecnológico",
+    "programmingLanguages": "Lenguajes de Programación",
+    "tools": "Herramientas y Tecnologías",
+    "qa": "Quality Assurance",
+    "qaAutomation": "QA Automation",
+    "devops": "DevOps"
+  },
+  "contact": {
+    "title": "Contactame....",
+    "intro": "Tienes un proyecto en mente, Dejame asesorate. No dudes en contactarnos.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje"
+    },
+    "info": {
+      "title": "Información de contacto",
+      "phone": "Teléfono:",
+      "email": "Correo:",
+      "linkedin": "LinkedIn:"
+    }
+  },
+  "cv": {
+    "professionalSummary": {
+      "title": "Resumen Profesional"
+    },
+    "workExperience": {
+      "title": "Experiencia Profesional"
+    },
+    "technicalSkills": {
+      "title": "Habilidades Técnicas"
+    },
+    "education": {
+      "title": "Educación"
+    },
+    "languages": {
+      "title": "Idiomas"
+    },
+    "certifications": {
+      "title": "Certificaciones y Cursos"
+    },
+    "keyResponsibilities": "Responsabilidades Clave:",
+    "keyCertification": "Certificación Clave",
+    "currentPosition": "Posición Actual",
+    "previousPosition": "Posición Anterior",
+    "emailAvailable": "Disponible bajo solicitud"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Explora mis proyectos y repositorios en GitHub",
+    "noProjects": "No hay proyectos disponibles por el momento.",
+    "date": "Fecha:",
+    "viewGitHub": "Ver en GitHub"
+  },
+  "footer": {
+    "contact": "Contacto",
+    "email": "Correo:",
+    "phone": "Telefono:",
+    "links": "Links",
+    "allRightsReserved": "Todos los derechos reservados."
+  },
+  "bio": {
+    "age": "EDAD:",
+    "country": "PAÍS:",
+    "job": "TRABAJO:",
+    "aboutMe": "SOBRE MÍ",
+    "myFavorites": "MIS FAVORITOS",
+    "funFacts": "DATOS CURIOSOS"
+  },
+  "language": "Idioma"
+}
+

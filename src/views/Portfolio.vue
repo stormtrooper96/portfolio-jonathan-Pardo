@@ -5,24 +5,21 @@
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
           <h1 class="mb-0">
-            Soy...
+            {{ $t('portfolio.iam') }}
             <TextRotate 
-              :to-rotate="['Tester', 'Desarrollador web junior', 'Analista de base de datos', 'Jonathan Andres Pardo']"
+              :to-rotate="rotatedTexts"
               :period="1000"
             />
           </h1>
           <div class="subheading mb-5">
             <p>
               <i class="fas fa-heart text-danger mr-2"></i>
-              From Bogotá to World
+              {{ $t('portfolio.fromBogota') }}
             </p>
             <a href="mailto:jonathanandrespardo38@gmail.com">jonathanandrespardo38@gmail.com</a>
           </div>
           <p class="lead mb-5">
-            En formación como Tecnologo en Desarrollo web Experiencia
-            generando consultas en lenguaje SQL, realizando pruebas funcionales y no funcionales de software,
-            análisis de información cuantitativa y conocimiento en desarrollo web Fullstack y de aplicaciones móviles híbridas.
-            Con capacidad de análisis, proactividad, mejoramiento continuo, Actitud de servicio y orientación al logro.
+            {{ $t('portfolio.intro') }}
           </p>
           <div class="row">
             <div class="social-icons col-md-4">
@@ -37,7 +34,7 @@
       <!-- Experience Section -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-colum" id="experiencie">
         <div class="my-auto">
-          <h2 class="mb-5">Experiencia</h2>
+          <h2 class="mb-5">{{ $t('portfolio.experience') }}</h2>
           <div class="row">
             <div class="col-md-1"></div>
             <div class="row col-md-10">
@@ -62,7 +59,7 @@
                       {{ exp.description }}
                     </p>
                     <div v-if="exp.responsibilities && exp.responsibilities.length > 0" class="mt-3">
-                      <strong>Responsabilidades clave:</strong>
+                      <strong>{{ $t('cv.keyResponsibilities') }}</strong>
                       <ul class="mt-2 pl-3">
                         <li v-for="(resp, idx) in exp.responsibilities.slice(0, 3)" :key="idx" class="small">
                           {{ resp }}
@@ -80,10 +77,10 @@
       <!-- Skills Section -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-          <div class="subheading mb-3">
-            Cuento conocimiento en las siguientes tecnologias y lenguajes de desarrollo:
-          </div>
+          <h2 class="mb-5">{{ $t('portfolio.skills') }}</h2>
+            <div class="subheading mb-3">
+              {{ $t('portfolio.skillsIntro') }}
+            </div>
           <ul class="list-inline dev-icons text-center">
             <li class="list-inline-item">
               <i class="fab fa-html5 fa-5x"></i>
@@ -110,7 +107,7 @@
       <!-- Certifications Section -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
-          <h2 class="mb-5">Certificaciones y cursos</h2>
+          <h2 class="mb-5">{{ $t('portfolio.certifications') }}</h2>
           <ul class="fa-ul mb-0">
             <li v-for="cert in certifications" :key="cert.name">
               <i 
@@ -126,14 +123,14 @@
       <!-- Tech Stack Section -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="tech-stack">
         <div class="my-auto">
-          <h2 class="mb-5">Stack Tecnológico</h2>
-          
-          <!-- Programming Languages -->
-          <div class="mb-4">
-            <h4 class="mb-3">
-              <i class="fas fa-code mr-2 text-primary"></i>
-              Lenguajes de Programación
-            </h4>
+          <h2 class="mb-5">{{ $t('portfolio.techStack') }}</h2>
+            
+            <!-- Programming Languages -->
+            <div class="mb-4">
+              <h4 class="mb-3">
+                <i class="fas fa-code mr-2 text-primary"></i>
+                {{ $t('portfolio.programmingLanguages') }}
+              </h4>
             <div class="tech-stack-tags">
               <span 
                 v-for="lang in techStack.programmingLanguages.skills" 
@@ -145,12 +142,12 @@
             </div>
           </div>
 
-          <!-- Tools & Technologies -->
-          <div class="mb-4">
-            <h4 class="mb-3">
-              <i class="fas fa-tools mr-2 text-primary"></i>
-              Herramientas y Tecnologías
-            </h4>
+            <!-- Tools & Technologies -->
+            <div class="mb-4">
+              <h4 class="mb-3">
+                <i class="fas fa-tools mr-2 text-primary"></i>
+                {{ $t('portfolio.tools') }}
+              </h4>
             <div class="tech-stack-tags">
               <span 
                 v-for="tool in techStack.tools.skills" 
@@ -162,12 +159,12 @@
             </div>
           </div>
 
-          <!-- QA Skills -->
-          <div class="mb-4">
-            <h4 class="mb-3">
-              <i class="fas fa-check-circle mr-2 text-primary"></i>
-              Quality Assurance
-            </h4>
+            <!-- QA Skills -->
+            <div class="mb-4">
+              <h4 class="mb-3">
+                <i class="fas fa-check-circle mr-2 text-primary"></i>
+                {{ $t('portfolio.qa') }}
+              </h4>
             <div class="tech-stack-tags">
               <span 
                 v-for="skill in techStack.qa.skills.slice(0, 6)" 
@@ -179,12 +176,12 @@
             </div>
           </div>
 
-          <!-- QA Automation -->
-          <div class="mb-4">
-            <h4 class="mb-3">
-              <i class="fas fa-robot mr-2 text-primary"></i>
-              QA Automation
-            </h4>
+            <!-- QA Automation -->
+            <div class="mb-4">
+              <h4 class="mb-3">
+                <i class="fas fa-robot mr-2 text-primary"></i>
+                {{ $t('portfolio.qaAutomation') }}
+              </h4>
             <div class="tech-stack-tags">
               <span 
                 v-for="skill in techStack.qaAutomation.skills.slice(0, 6)" 
@@ -196,12 +193,12 @@
             </div>
           </div>
 
-          <!-- DevOps -->
-          <div>
-            <h4 class="mb-3">
-              <i class="fas fa-server mr-2 text-primary"></i>
-              DevOps
-            </h4>
+            <!-- DevOps -->
+            <div>
+              <h4 class="mb-3">
+                <i class="fas fa-server mr-2 text-primary"></i>
+                {{ $t('portfolio.devops') }}
+              </h4>
             <div class="tech-stack-tags">
               <span 
                 v-for="skill in techStack.devops.skills" 
@@ -219,13 +216,24 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import TextRotate from '../components/TextRotate.vue'
 import cvDataJson from '../data/cv.json'
+
+const { locale } = useI18n()
 
 const experience = ref(cvDataJson.experience)
 const certifications = ref(cvDataJson.certifications)
 const techStack = ref(cvDataJson.skillsByCategory)
+
+const rotatedTexts = computed(() => {
+  if (locale.value === 'es') {
+    return ['Tester', 'Desarrollador de software', 'Automatizador y QA Funcional', 'Jonathan Andres Pardo']
+  } else {
+    return ['Tester', 'Software Developer', 'QA Automation and QA functional', 'Jonathan Andres Pardo']
+  }
+})
 </script>
 
 <style scoped>

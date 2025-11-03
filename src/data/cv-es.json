@@ -1,0 +1,157 @@
+{
+  "personalInfo": {
+    "name": "Jonathan Andres Pardo",
+    "jobTitle": "Ingeniero de Sistemas / QA Automation / DevOps",
+    "location": "Bogotá, Colombia",
+    "email": "Disponible bajo solicitud"
+  },
+  "professionalSummary": "Profesional en pruebas automatizadas y desarrollador independiente con sede en Bogotá, Colombia. Amplia experiencia en QA, QA Automation y prácticas DevOps. Altamente capacitado en pruebas de software, automatización de pruebas, gestión de bases de datos y desarrollo web Fullstack. Competente en múltiples lenguajes de programación y herramientas modernas de desarrollo.",
+  "experience": [
+    {
+      "id": 1,
+      "sector": "Sector Tecnológico",
+      "position": "Ingeniero de Automatización QA",
+      "duration": "3+ años",
+      "period": "Posición Actual",
+      "description": "Liderando iniciativas de pruebas automatizadas con enfoque en gestión eficiente del tiempo e integración continua. Responsable del desarrollo y mantenimiento de frameworks de automatización de pruebas, ejecución de pruebas funcionales y no funcionales, e implementación de procesos de aseguramiento de calidad en entornos ágiles.",
+      "responsibilities": [
+        "Diseñar e implementar suites de pruebas automatizadas para aplicaciones web y API",
+        "Desarrollar frameworks de automatización de pruebas utilizando herramientas estándar de la industria",
+        "Ejecutar pruebas funcionales, de regresión y de rendimiento",
+        "Integrar pruebas automatizadas en pipelines CI/CD",
+        "Colaborar con equipos de desarrollo para garantizar estándares de calidad"
+      ],
+      "skills": ["Automatización de Pruebas", "Aseguramiento de Calidad", "Pruebas Funcionales", "Pruebas de Rendimiento", "Integración CI/CD"]
+    },
+    {
+      "id": 4,
+      "sector": "Sector Tecnológico",
+      "position": "Tester QA Manual",
+      "duration": "2+ años",
+      "period": "Posición Anterior",
+      "description": "Realicé actividades completas de pruebas manuales incluyendo pruebas funcionales, de regresión y de aceptación de usuario. Desarrollé casos de prueba detallados, ejecuté planes de prueba e informé defectos con documentación clara. Trabajé estrechamente con equipos de desarrollo en entornos ágiles para garantizar la entrega de software de alta calidad.",
+      "responsibilities": [
+        "Desarrollar y ejecutar casos de prueba y planes de prueba detallados",
+        "Realizar pruebas funcionales, de regresión y de aceptación de usuario",
+        "Identificar, documentar y rastrear defectos de software",
+        "Participar en análisis de requisitos y revisiones de diseño de pruebas",
+        "Crear documentación de pruebas e informes de errores",
+        "Colaborar con equipos multifuncionales en sprints ágiles"
+      ],
+      "skills": ["Pruebas Manuales", "Diseño de Casos de Prueba", "Seguimiento de Errores", "Pruebas Funcionales", "Pruebas de Regresión", "Metodologías Ágiles"]
+    },
+    {
+      "id": 2,
+      "sector": "Sector de Tecnología Financiera",
+      "position": "Analista de Business Intelligence / Desarrollador de Bases de Datos",
+      "duration": "2+ años",
+      "period": "Posición Anterior",
+      "description": "Gestioné operaciones de bases de datos y soluciones de inteligencia empresarial para empresas de tecnología financiera a gran escala. Desarrollé consultas SQL complejas, modelos de datos y soluciones de informes manejando millones de registros.",
+      "responsibilities": [
+        "Instalación, gestión y optimización de bases de datos",
+        "Desarrollo y optimización de consultas SQL complejas",
+        "Modelado de datos y diseño de bases de datos",
+        "Creación y mantenimiento de informes de inteligencia empresarial",
+        "Análisis de datos y generación de insights"
+      ],
+      "skills": ["Gestión de Bases de Datos", "Análisis de Datos", "SQL", "Inteligencia Empresarial", "Modelado de Datos"]
+    },
+    {
+      "id": 3,
+      "sector": "Sector Tecnológico",
+      "position": "Analista de Datos / Desarrollador",
+      "duration": "1+ año",
+      "period": "Posición Anterior",
+      "description": "Desarrollé soluciones de visualización de datos y procesos ETL para grandes empresas que procesan altos volúmenes de datos con millones de registros mensuales utilizando herramientas avanzadas de BI.",
+      "responsibilities": [
+        "Crear dashboards y informes de visualización de datos",
+        "Desarrollar y mantener procesos ETL",
+        "Gestionar pipelines de procesamiento de datos a gran escala",
+        "Generar insights a partir de análisis de datos cuantitativos"
+      ],
+      "skills": ["Visualización de Datos", "ETL", "Desarrollo de Informes", "Análisis de Datos"]
+    }
+  ],
+  "skillsByCategory": {
+    "qa": {
+      "title": "Aseguramiento de Calidad",
+      "skills": [
+        "Pruebas Funcionales",
+        "Pruebas de Regresión",
+        "Pruebas de Rendimiento",
+        "Pruebas de Carga",
+        "Pruebas de Seguridad",
+        "Planificación y Estrategia de Pruebas",
+        "Seguimiento e Informes de Errores",
+        "Diseño de Casos de Prueba",
+        "Pruebas Manuales"
+      ]
+    },
+    "qaAutomation": {
+      "title": "Automatización QA",
+      "skills": [
+        "Frameworks de Automatización de Pruebas",
+        "Selenium WebDriver",
+        "Automatización de Pruebas API",
+        "Integración CI/CD",
+        "Pruebas Continuas",
+        "Desarrollo de Scripts de Prueba",
+        "Suites de Regresión Automatizadas",
+        "Gestión de Datos de Prueba",
+        "Ejecución Paralela de Pruebas"
+      ]
+    },
+    "devops": {
+      "title": "DevOps",
+      "skills": [
+        "Pipelines CI/CD",
+        "Jenkins",
+        "GitLab CI",
+        "Docker",
+        "Containerización",
+        "Infraestructura como Código",
+        "Despliegues Automatizados",
+        "Monitoreo y Registro",
+        "Control de Versiones (Git)"
+      ]
+    },
+    "programmingLanguages": {
+      "title": "Lenguajes de Programación",
+      "skills": [
+        "JavaScript (ES6+)",
+        "Python",
+        "Java",
+        "SQL",
+        "TypeScript",
+        "Ruby",
+        "C#",
+        "Bash/Shell Scripting"
+      ]
+    },
+    "tools": {
+      "title": "Herramientas y Tecnologías",
+      "skills": [
+        "Selenium",
+        "Postman",
+        "Git",
+        "Jenkins",
+        "Docker",
+        "Jira",
+        "Tableau",
+        "Redis",
+        "PostgreSQL",
+        "MySQL",
+        "SQL Server",
+        "Oracle",
+        "MongoDB",
+        "Vue.js",
+        "React",
+        "Angular",
+        "Node.js",
+        "Ruby on Rails",
+        ".NET Framework"
+      ]
+    }
+  }
+}
+

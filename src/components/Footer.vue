@@ -10,27 +10,27 @@
               <br/>
               <span>Jonathan Pardo</span>
               <span>. </span>
-              <span> Todos los derechos reservados.</span>
+              <span> {{ $t('footer.allRightsReserved') }}</span>
             </p>
           </div>
         </div>
         <div class="col-md-4">
-          <h5>Contacto</h5>
+          <h5>{{ $t('footer.contact') }}</h5>
           <dl class="contact-list">
-            <dt>Correo:</dt>
+            <dt>{{ $t('footer.email') }}</dt>
             <dd>
               <a href="mailto:jonathanandrespardo38@gmail.com">jonathanandrespardo38@gmail.com</a>
             </dd>
           </dl>
           <dl class="contact-list">
-            <dt>Telefono:</dt>
+            <dt>{{ $t('footer.phone') }}</dt>
             <dd>
               <a href="tel:+573057230036">+57 3057230036</a>
             </dd>
           </dl>
         </div>
         <div class="col-md-4 col-xl-3">
-          <h5>Links</h5>
+          <h5>{{ $t('footer.links') }}</h5>
           <ul class="nav-list">
             <li><router-link to="/">Home</router-link></li>
             <li><router-link to="/biografia">Biografia</router-link></li>

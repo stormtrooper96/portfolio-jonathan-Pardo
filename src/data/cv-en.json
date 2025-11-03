@@ -1,0 +1,157 @@
+{
+  "personalInfo": {
+    "name": "Jonathan Andres Pardo",
+    "jobTitle": "System Engineer / QA Automation / DevOps",
+    "location": "Bogotá, Colombia",
+    "email": "Available upon request"
+  },
+  "professionalSummary": "Automated testing professional and independent developer based in Bogotá, Colombia. Extensive experience in QA, QA Automation, and DevOps practices. Highly skilled in software testing, test automation, database management, and Fullstack web development. Proficient in multiple programming languages and modern development tools.",
+  "experience": [
+    {
+      "id": 1,
+      "sector": "Technology Sector",
+      "position": "QA Automation Engineer",
+      "duration": "3+ years",
+      "period": "Current Position",
+      "description": "Leading automated testing initiatives with focus on efficient time management and continuous integration. Responsible for developing and maintaining test automation frameworks, executing functional and non-functional testing, and implementing quality assurance processes in agile environments.",
+      "responsibilities": [
+        "Design and implement automated test suites for web and API applications",
+        "Develop test automation frameworks using industry-standard tools",
+        "Execute functional, regression, and performance testing",
+        "Integrate automated tests into CI/CD pipelines",
+        "Collaborate with development teams to ensure quality standards"
+      ],
+      "skills": ["Test Automation", "Quality Assurance", "Functional Testing", "Performance Testing", "CI/CD Integration"]
+    },
+    {
+      "id": 4,
+      "sector": "Technology Sector",
+      "position": "QA Manual Tester",
+      "duration": "2+ years",
+      "period": "Previous Position",
+      "description": "Performed comprehensive manual testing activities including functional, regression, and user acceptance testing. Developed detailed test cases, executed test plans, and reported defects with clear documentation. Worked closely with development teams in agile environments to ensure high-quality software delivery.",
+      "responsibilities": [
+        "Develop and execute detailed test cases and test plans",
+        "Perform functional, regression, and user acceptance testing",
+        "Identify, document, and track software defects",
+        "Participate in requirements analysis and test design reviews",
+        "Create test documentation and bug reports",
+        "Collaborate with cross-functional teams in agile sprints"
+      ],
+      "skills": ["Manual Testing", "Test Case Design", "Bug Tracking", "Functional Testing", "Regression Testing", "Agile Methodologies"]
+    },
+    {
+      "id": 2,
+      "sector": "Financial Technology Sector",
+      "position": "Business Intelligence Analyst / Database Developer",
+      "duration": "2+ years",
+      "period": "Previous Position",
+      "description": "Managed database operations and business intelligence solutions for large-scale financial technology companies. Developed complex SQL queries, data models, and reporting solutions handling millions of records.",
+      "responsibilities": [
+        "Database installation, management, and optimization",
+        "Complex SQL query development and optimization",
+        "Data modeling and database design",
+        "Business intelligence report creation and maintenance",
+        "Data analysis and insights generation"
+      ],
+      "skills": ["Database Management", "Data Analysis", "SQL", "Business Intelligence", "Data Modeling"]
+    },
+    {
+      "id": 3,
+      "sector": "Technology Sector",
+      "position": "Data Analyst / Developer",
+      "duration": "1+ year",
+      "period": "Previous Position",
+      "description": "Developed data visualization solutions and ETL processes for large companies processing high data volumes with millions of monthly records using advanced BI tools.",
+      "responsibilities": [
+        "Create data visualization dashboards and reports",
+        "Develop and maintain ETL processes",
+        "Manage large-scale data processing pipelines",
+        "Generate insights from quantitative data analysis"
+      ],
+      "skills": ["Data Visualization", "ETL", "Report Development", "Data Analysis"]
+    }
+  ],
+  "skillsByCategory": {
+    "qa": {
+      "title": "Quality Assurance",
+      "skills": [
+        "Functional Testing",
+        "Regression Testing",
+        "Performance Testing",
+        "Load Testing",
+        "Security Testing",
+        "Test Planning & Strategy",
+        "Bug Tracking & Reporting",
+        "Test Case Design",
+        "Manual Testing"
+      ]
+    },
+    "qaAutomation": {
+      "title": "QA Automation",
+      "skills": [
+        "Test Automation Frameworks",
+        "Selenium WebDriver",
+        "API Testing Automation",
+        "CI/CD Integration",
+        "Continuous Testing",
+        "Test Script Development",
+        "Automated Regression Suites",
+        "Test Data Management",
+        "Parallel Test Execution"
+      ]
+    },
+    "devops": {
+      "title": "DevOps",
+      "skills": [
+        "CI/CD Pipelines",
+        "Jenkins",
+        "GitLab CI",
+        "Docker",
+        "Containerization",
+        "Infrastructure as Code",
+        "Automated Deployments",
+        "Monitoring & Logging",
+        "Version Control (Git)"
+      ]
+    },
+    "programmingLanguages": {
+      "title": "Programming Languages",
+      "skills": [
+        "JavaScript (ES6+)",
+        "Python",
+        "Java",
+        "SQL",
+        "TypeScript",
+        "Ruby",
+        "C#",
+        "Bash/Shell Scripting"
+      ]
+    },
+    "tools": {
+      "title": "Tools & Technologies",
+      "skills": [
+        "Selenium",
+        "Postman",
+        "Git",
+        "Jenkins",
+        "Docker",
+        "Jira",
+        "Tableau",
+        "Redis",
+        "PostgreSQL",
+        "MySQL",
+        "SQL Server",
+        "Oracle",
+        "MongoDB",
+        "Vue.js",
+        "React",
+        "Angular",
+        "Node.js",
+        "Ruby on Rails",
+        ".NET Framework"
+      ]
+    }
+  }
+}
+

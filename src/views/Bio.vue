@@ -19,9 +19,9 @@
           <div class="col-md-8 col-12">
             <h1 class="profile-name">{{ bioData.profile.name }}</h1>
             <div class="profile-details">
-              <p><span class="label">AGE:</span> {{ bioData.profile.age }}</p>
-              <p><span class="label">COUNTRY:</span> {{ bioData.profile.country }}</p>
-              <p><span class="label">JOB:</span> {{ bioData.profile.job }}</p>
+              <p><span class="label">{{ $t('bio.age') }}</span> {{ bioData.profile.age }}</p>
+              <p><span class="label">{{ $t('bio.country') }}</span> {{ bioData.profile.country }}</p>
+              <p><span class="label">{{ $t('bio.job') }}</span> {{ bioData.profile.job }}</p>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@
     <div class="about-section">
       <div class="container">
         <div class="about-card">
-          <h2 class="section-title">ABOUT ME</h2>
+          <h2 class="section-title">{{ $t('bio.aboutMe') }}</h2>
           <p class="about-text">{{ bioData.aboutMe }}</p>
         </div>
       </div>
@@ -45,7 +45,7 @@
           <!-- My Favorites -->
           <div class="col-md-4 col-12 mb-4 mb-md-0">
             <div class="info-card">
-              <h3 class="card-title">MY FAVORITES</h3>
+              <h3 class="card-title">{{ $t('bio.myFavorites') }}</h3>
               <div class="favorites-grid">
                 <div 
                   v-for="(favorite, index) in bioData.favorites" 
@@ -62,7 +62,7 @@
           <!-- Fun Facts -->
           <div class="col-md-4 col-12 mb-4 mb-md-0">
             <div class="info-card">
-              <h3 class="card-title">FUN FACTS</h3>
+              <h3 class="card-title">{{ $t('bio.funFacts') }}</h3>
               <ul class="fun-facts-list">
                 <li v-for="(fact, index) in bioData.funFacts" :key="index">
                   <i class="fas fa-check-circle"></i>

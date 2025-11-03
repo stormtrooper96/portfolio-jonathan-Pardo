@@ -135,7 +135,7 @@ The application includes a complete dark mode implementation:
 
 The `TextRotate.vue` component maintains the original text rotation effect displaying:
 - "Tester"
-- "Desarrollador web junior"
+- "Desarrollador de software"
 - "Analista de base de datos"
 - "Jonathan Andres Pardo"
 

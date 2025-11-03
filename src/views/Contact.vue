@@ -3,10 +3,9 @@
     <div class="container contact-con">
       <div class="row mb-4">
         <div class="col-12">
-          <h1 class="contact-title">Contactame....</h1>
+          <h1 class="contact-title">{{ $t('contact.title') }}</h1>
           <p class="contact-intro" id="intro">
-            Tienes un proyecto en mente, Dejame asesorate.
-            No dudes en contactarnos.
+            {{ $t('contact.intro') }}
           </p>
         </div>
       </div>
@@ -21,7 +20,7 @@
                   <input 
                     type="text" 
                     class="form-control" 
-                    placeholder="Nombre" 
+                    :placeholder="$t('contact.form.name')" 
                     required 
                     v-model="form.name"
                   >
@@ -30,7 +29,7 @@
                   <input 
                     type="email" 
                     class="form-control" 
-                    placeholder="Correo" 
+                    :placeholder="$t('contact.form.email')" 
                     required 
                     v-model="form.email"
                   >
@@ -42,14 +41,14 @@
                 type="text" 
                 class="form-control" 
                 id="subject-form" 
-                placeholder="Asunto" 
+                :placeholder="$t('contact.form.subject')" 
                 required 
                 v-model="form.subject"
               >
             </div>
             <div class="form-group">
               <textarea 
-                placeholder="Mensaje" 
+                :placeholder="$t('contact.form.message')" 
                 class="form-control" 
                 id="exampleFormControlTextarea1" 
                 rows="5" 
@@ -58,7 +57,7 @@
               ></textarea>
             </div>
             <button type="submit" class="btn btn-info btn-block" id="btn-sendmesage">
-              Enviar mensaje
+              {{ $t('contact.form.submit') }}
             </button>
           </form>
         </div>
@@ -66,9 +65,9 @@
         <!-- Información de contacto -->
         <div class="col-lg-6 col-md-12">
           <div class="contact-info">
-            <h3>Información de contacto</h3>
+            <h3>{{ $t('contact.info.title') }}</h3>
             <div class="contact-detail">
-              <strong>Teléfono:</strong>
+              <strong>{{ $t('contact.info.phone') }}</strong>
               <p>
                 <a href="tel:+573057230036">+57 3057230036</a><br>
                 <a href="tel:+573132509721">+57 3132509721</a>
@@ -76,14 +75,14 @@
             </div>
 
             <div class="contact-detail">
-              <strong>Correo:</strong>
+              <strong>{{ $t('contact.info.email') }}</strong>
               <p>
                 <a href="mailto:jonathanandrespardo38@gmail.com">jonathanandrespardo38@gmail.com</a>
               </p>
             </div>
 
             <div class="contact-detail">
-              <strong>LinkedIn:</strong>
+              <strong>{{ $t('contact.info.linkedin') }}</strong>
               <p>
                 <a href="https://www.linkedin.com/in/japardos/" target="_blank" rel="noopener noreferrer">
                   linkedin.com/in/japardos/
@@ -99,6 +98,9 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const form = ref({
   name: '',
