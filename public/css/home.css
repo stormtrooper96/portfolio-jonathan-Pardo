@@ -1,0 +1,43 @@
+#img-portada{
+    background: 	linear-gradient(
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	  ),url('http://adventuresinqa.com/wp-content/uploads/2015/06/Stickers-Adventures-in-QA.jpg');
+
+      background-size: cover;
+      margin-bottom:12%;  
+
+   
+}
+.row .jumbotron{
+   
+    color:white;
+    padding: 10%;
+
+}
+.row .jumbotron h1{
+
+    font-size: 50px;
+    
+    }
+    .row .jumbotron p{
+
+        font-size: 25px;
+        
+    }   
+    .item{
+        margin-top:5%;  
+       margin-bottom:15%;  
+
+    }
+    .item i{
+        margin-bottom:2%;  
+       color:#003459;
+  
+        }
+
+    .section-languge{
+
+        color: red;
+
+    }

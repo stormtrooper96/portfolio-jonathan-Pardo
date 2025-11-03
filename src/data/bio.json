@@ -1,0 +1,35 @@
+{
+  "profile": {
+    "name": "Jonathan Andres Pardo",
+    "age": 28,
+    "country": "Colombia",
+    "job": "System Engineer",
+    "image": "https://via.placeholder.com/400x500?text=Profile+Photo"
+  },
+  "aboutMe": "I am a person who enjoys exploring new places and walking by the high mountains near to Bogotá city or just having an artisanal coffee with unique flavors. I consider myself a curious and adventurous person who enjoys travelling through new towns and capturing beautiful photos. My goal is to keep improving my working skills and travel around the world. I believe that every experience helps me grow and see life from new perspectives.",
+  "favorites": [
+    {
+      "icon": "fas fa-gamepad",
+      "label": "Games"
+    },
+    {
+      "icon": "fas fa-coffee",
+      "label": "Coffee"
+    },
+    {
+      "icon": "fas fa-globe",
+      "label": "Travel"
+    }
+  ],
+  "funFacts": [
+    "I'm counting the days for new gaming releases and tech innovations",
+    "I dream of visiting Japan to experience the culture and technology",
+    "I want to try every coffee variety in Colombia",
+    "Off the tech trail, I'm exploring local craft beers and food"
+  ],
+  "quote": {
+    "text": "Don't waste time lamenting those moments that will never return.",
+    "source": "One Piece"
+  }
+}
+

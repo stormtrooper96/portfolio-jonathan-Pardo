@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "Proyecto Demostración Serenity Java - DemoBlaze",
+    "description": "Proyecto de automatización de pruebas usando Serenity BDD con Java 17, Maven y el patrón Screenplay para la tienda demoblaze.com",
+    "date": "2024",
+    "githubUrl": "https://github.com/stormtrooper96/demoblazeJonathanandresPardo",
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=600&fit=crop",
+    "markdown": "# Proyecto Demostración Serenity Java - DemoBlaze\n\n## Descripción\n\nEste proyecto utiliza Serenity BDD con Java 17 y Maven para automatizar pruebas en la página demoblaze.com. El proyecto incluye los siguientes casos de uso:\n\n* **Registro de un nuevo usuario** en la página Product Store.\n* **Realización de una compra** añadiendo productos al carrito.\n\n## Tecnologías Utilizadas\n\n* Java 17\n* Maven 3.6.3+\n* Serenity BDD\n* Cucumber\n* Patrón Screenplay\n* GitHub Actions para CI/CD\n\n## Características\n\n- Framework de automatización con Serenity BDD\n- Patrón Screenplay para mejor mantenibilidad\n- Integración continua con GitHub Actions\n- Reportes automatizados generados y publicados en GitHub Pages\n- Soporte para múltiples navegadores (Chrome y Firefox)\n\n## Estructura del Proyecto\n\nEl proyecto sigue la estructura del patrón Screenplay:\n\n```\ntest/\n  java/\n    demoblaze/\n      questions/\n      runners/\n      stepdefinitions/\n      task/\n      userinterfaces/\nresources/\n  features/\n```\n\n## Ejecución\n\nEl proyecto se puede ejecutar con diferentes navegadores:\n\n```bash\n# Chrome\nmvn clean verify -Denvironment=chrome\n\n# Firefox\nmvn clean verify -Denvironment=firefox\n```\n\n## Reportes\n\nLos reportes se generan automáticamente mediante GitHub Actions y están disponibles en:\n\nhttps://stormtrooper96.github.io/demoblazeJonathanandresPardo/\n\n## Workflow de CI/CD\n\nEl workflow de GitHub Actions está configurado en:\n\nhttps://github.com/stormtrooper96/demoblazeJonathanandresPardo/actions/workflows/living-documentation.yml"
+  }
+]

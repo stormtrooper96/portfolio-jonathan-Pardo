@@ -1,0 +1,101 @@
+/* Responsive Global Styles */
+
+/* Mobile First Approach */
+
+/* Mobile devices (default) */
+@media (max-width: 575.98px) {
+  /* Ajustar padding-top del main para móviles */
+  main {
+    padding-top: 70px !important;
+  }
+  
+  /* Tipografía responsive */
+  h1.display-4 {
+    font-size: 2rem;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
+  
+  /* Container padding en móviles */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Tablet devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  main {
+    padding-top: 75px;
+  }
+  
+  h1.display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Desktop devices */
+@media (min-width: 768px) {
+  main {
+    padding-top: 80px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 992px) {
+  /* Espaciado adicional para pantallas grandes */
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Utilidades responsive */
+@media (max-width: 767.98px) {
+  /* Ocultar elementos no esenciales en móvil */
+  .d-mobile-none {
+    display: none !important;
+  }
+  
+  /* Centrar texto en móvil */
+  .text-mobile-center {
+    text-align: center !important;
+  }
+  
+  /* Padding reducido en móvil */
+  .p-mobile-sm {
+    padding: 1rem !important;
+  }
+  
+  /* Margin reducido en móvil */
+  .m-mobile-sm {
+    margin: 1rem !important;
+  }
+}
+
+/* Imágenes responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Cards responsive */
+.card {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+

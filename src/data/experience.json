@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "title": "Pruebas de software",
+    "description": "En la actualidad me vengo desempeñando como analista de pruebas de software en una empresa donde el tiempo es lo mas importante es el manejo eficiente del tiempo, por esto es necesario realizar pruebas automatizadas.",
+    "image": "http://todosqa.com/wp-content/uploads/2019/03/wms-system-testing-graphic-feature-17.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Desarrollo en base de datos y analisis de información",
+    "description": "Cuento con mas de dos años de experiencia realizando instalacion, manejo, modelamiento y elaboracion de consultas en bases de datos relacionales como Postgres, Oracle, SQLserver y Mysql",
+    "image": "https://static.platzi.com/media/blog/cover_db-d70123ba-5f83-49bf-9142-fee4eb7cd45b.png"
+  },
+  {
+    "id": 3,
+    "title": "Desarrollo y monitoreo de indicadores de gestión",
+    "description": "Cuento con conocimiento en herraminetas de gestión de información, creación de reportes en herramientas como Tableau, Redis y Datazen. Aplicada a grandes empresas que manejan un gran volumen de datos como los Easy Taxi Y Tappsi que manejan mas de 20 millones de registros mensuales.",
+    "image": "https://www.certia.net/Imagenes/AutoBI.jpg"
+  }
+]
+

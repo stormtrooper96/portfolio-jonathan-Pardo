@@ -1,0 +1,38 @@
+.bio {
+    margin: 10%;
+    margin-bottom: 4rem;
+    background-color: var(--bg-primary, #ffffff);
+}
+
+.bio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bio h1 {
+    color: var(--text-primary, #212529);
+    margin-bottom: 1.5rem;
+}
+
+.bio p {
+    color: var(--text-secondary, #6c757d);
+    line-height: 1.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .bio {
+        margin: 5%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .bio {
+        margin: 3%;
+    }
+    
+    .bio img {
+        margin-bottom: 1.5rem;
+    }
+}

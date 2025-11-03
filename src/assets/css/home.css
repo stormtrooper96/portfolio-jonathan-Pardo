@@ -1,0 +1,104 @@
+#img-portada {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('http://adventuresinqa.com/wp-content/uploads/2015/06/Stickers-Adventures-in-QA.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 12%;
+}
+
+.row .jumbotron {
+    color: white;
+    padding: 10%;
+    background-color: transparent;
+}
+
+.row .jumbotron h1 {
+    font-size: 50px;
+}
+
+.row .jumbotron p {
+    font-size: 25px;
+}
+
+.item {
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.item i {
+    margin-bottom: 2%;
+    color: var(--accent-primary, #003459);
+}
+
+.section-language {
+    background-color: var(--bg-primary, #ffffff);
+    color: var(--text-primary, #212529);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .item {
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .row .jumbotron {
+        padding: 5%;
+    }
+    
+    .row .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+    
+    .row .jumbotron p {
+        font-size: 1.25rem;
+    }
+    
+    #img-portada {
+        margin-bottom: 8%;
+    }
+    
+    .item {
+        margin-top: 3%;
+        margin-bottom: 8%;
+    }
+    
+    .item i {
+        font-size: 4rem !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .row .jumbotron {
+        padding: 3%;
+    }
+    
+    .row .jumbotron h1 {
+        font-size: 1.75rem;
+    }
+    
+    .row .jumbotron p {
+        font-size: 1rem;
+    }
+    
+    #img-portada {
+        margin-bottom: 5%;
+    }
+    
+    .item {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .item i {
+        font-size: 3rem !important;
+    }
+    
+    .section-language h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,53 @@
+.contact-con {
+    margin: 10%;
+    margin-bottom: 4rem;
+    background-color: var(--bg-primary, #ffffff);
+}
+
+.contact-con h1 {
+    color: var(--text-primary, #212529);
+}
+
+.contact-con #intro {
+    color: var(--text-secondary, #6c757d);
+}
+
+.contact-con form {
+    background-color: var(--card-bg, #ffffff);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md, 0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.contact-con .form-control {
+    background-color: var(--bg-primary, #ffffff);
+    border-color: var(--border-color, #dee2e6);
+    color: var(--text-primary, #212529);
+}
+
+.contact-con .form-control:focus {
+    background-color: var(--bg-primary, #ffffff);
+    border-color: var(--accent-primary, #007bff);
+    color: var(--text-primary, #212529);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .contact-con {
+        margin: 5%;
+    }
+    
+    .contact-con form {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact-con {
+        margin: 3%;
+    }
+    
+    .contact-con form {
+        padding: 1rem;
+    }
+}

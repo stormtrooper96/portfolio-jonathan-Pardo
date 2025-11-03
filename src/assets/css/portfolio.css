@@ -1,0 +1,70 @@
+.sectionresume {
+    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 4rem;
+    background-color: var(--bg-primary, #ffffff);
+}
+
+.social-icons {
+    margin-left: 40%; 
+    margin-right: 50%; 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    color: var(--accent-primary, #4997D0);
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.dev-icons {
+    color: var(--accent-primary, #4997D0);
+}
+
+.social-icons i {
+    color: var(--accent-primary, #4997D0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .sectionresume {
+        margin: 5%;
+        margin-top: 3%;
+    }
+    
+    .social-icons {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .sectionresume {
+        margin: 3%;
+        margin-top: 2%;
+    }
+    
+    .resume-section {
+        padding: 1rem !important;
+    }
+    
+    .portfolio-item {
+        margin-bottom: 1.5rem;
+    }
+    
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .dev-icons .fa-5x {
+        font-size: 3rem !important;
+    }
+}

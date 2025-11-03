@@ -1,0 +1,97 @@
+:root {
+  /* Light Theme - Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  
+  /* Light Theme - Text Colors */
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --text-muted: #adb5bd;
+  
+  /* Light Theme - Border Colors */
+  --border-color: #dee2e6;
+  --border-color-light: #e9ecef;
+  
+  /* Light Theme - Component Colors */
+  --nav-bg: #343a40;
+  --footer-bg: #003459;
+  --card-bg: #ffffff;
+  --card-border: #dee2e6;
+  
+  /* Light Theme - Accent Colors */
+  --accent-primary: #007bff;
+  --accent-secondary: #6c757d;
+  --link-color: #007bff;
+  --link-hover: #0056b3;
+  
+  /* Light Theme - Shadow */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  /* Transitions */
+  --transition-speed: 0.3s;
+  --transition-ease: ease;
+}
+
+[data-theme="dark"] {
+  /* Dark Theme - Background Colors */
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #404040;
+  
+  /* Dark Theme - Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+  
+  /* Dark Theme - Border Colors */
+  --border-color: #404040;
+  --border-color-light: #2d2d2d;
+  
+  /* Dark Theme - Component Colors */
+  --nav-bg: #0d0d0d;
+  --footer-bg: #001a2e;
+  --card-bg: #2d2d2d;
+  --card-border: #404040;
+  
+  /* Dark Theme - Accent Colors */
+  --accent-primary: #4dabf7;
+  --accent-secondary: #868e96;
+  --link-color: #4dabf7;
+  --link-hover: #339af0;
+  
+  /* Dark Theme - Shadow */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Transitions globales para cambios de tema */
+body,
+#app,
+main,
+.card,
+.cv-section,
+.bio,
+.contact-con,
+.sectionresume {
+  transition: background-color var(--transition-speed) var(--transition-ease),
+              color var(--transition-speed) var(--transition-ease),
+              border-color var(--transition-speed) var(--transition-ease);
+}
+
+/* Excluir elementos que no deben tener transición */
+*:focus,
+*:active,
+input,
+button:active,
+a:active,
+img,
+svg,
+video,
+iframe {
+  transition: none;
+}
+
